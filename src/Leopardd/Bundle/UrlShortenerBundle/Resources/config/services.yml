@@ -1,0 +1,4 @@
+services:
+#    leopardd_url_shortener.example:
+#        class: Leopardd\Bundle\UrlShortenerBundle\Example
+#        arguments: ["@service_id", "plain_value", "%parameter%"]

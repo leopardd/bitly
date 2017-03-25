@@ -1,0 +1,3 @@
+leopardd_url_shortener_homepage:
+    path:     /
+    defaults: { _controller: LeoparddUrlShortenerBundle:Default:index }
