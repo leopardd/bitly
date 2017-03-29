@@ -31,11 +31,8 @@ class RedirectService
      * @param ShortUrlRepositoryInterface $shortUrlRepository
      * @param EventDispatcherInterface $dispatcher
      */
-    public function __construct(
-        Hashids $hashids,
-        ShortUrlRepositoryInterface $shortUrlRepository,
-        EventDispatcherInterface $dispatcher
-    ) {
+    public function __construct($hashids, $shortUrlRepository, $dispatcher)
+    {
         $this->hashids = $hashids;
         $this->shortUrlRepository = $shortUrlRepository;
         $this->dispatcher = $dispatcher;
