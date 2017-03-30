@@ -1,7 +1,7 @@
+leopardd:
+    resource: '@AppBundle/Resources/config/routing.yml'
+    prefix: /
+
 leopardd_url_shortener:
     resource: "@LeoparddUrlShortenerBundle/Resources/config/routing.yml"
-    prefix:   /
-
-app:
-    resource: '@AppBundle/Controller/'
-    type: annotation
+    prefix: /short/

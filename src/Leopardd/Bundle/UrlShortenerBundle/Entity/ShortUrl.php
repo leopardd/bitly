@@ -3,7 +3,9 @@
 namespace Leopardd\Bundle\UrlShortenerBundle\Entity;
 
 use \DateTime as DateTime;
+use Symfony\Component\Validator\Constraints as Assert;
 use Doctrine\ORM\Mapping as ORM;
+use JMS\Serializer\Annotation as JMS;
 
 /**
  * Class ShortUrl
@@ -16,26 +18,37 @@ class ShortUrl implements ShortUrlInterface
     /**
      * @var int
      * @ORM\Id
-     * @ORM\Column(type="integer")
+     * @ORM\Column(name="id", type="integer")
      * @ORM\GeneratedValue(strategy="AUTO")
+     * @JMS\Expose()
      */
     protected $id;
 
     /**
      * @var string
+     * @Assert\NotBlank(message="The code should not be blank")
      * @ORM\Column(name="code", type="string", unique=true, nullable=true, options={"collation":"utf8_bin"})
+     * @JMS\Expose()
      */
     protected $code;
 
     /**
      * @var string
-     * @ORM\Column(name="url", type="string")
+     * @Assert\NotBlank(message="The url should not be blank")
+     * @Assert\Length(
+     *   max = 255,
+     *   maxMessage = "The url cannot be longer than {{ limit }} characters"
+     * )
+     * @ORM\Column(name="url", type="string", length=255)
+     * @JMS\Expose()
      */
     protected $url;
 
     /**
      * @var DateTime
      * @ORM\Column(name="created", type="datetime")
+     * @JMS\Type("DateTime<'Y-m-d H:i:s', 'UTC'>")
+     * @JMS\Expose()
      */
     private $created;
 
@@ -101,7 +114,7 @@ class ShortUrl implements ShortUrlInterface
 
     /**
      * @param DateTime $created
-     * @return $this
+     * @return ShortUrl
      */
     public function setCreated($created)
     {

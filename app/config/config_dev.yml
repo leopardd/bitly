@@ -32,3 +32,9 @@ monolog:
 
 #swiftmailer:
 #    delivery_addresses: ['me@example.com']
+
+leopardd_url_shortener:
+    hashids:
+        salt: new salt
+        min_length: 10
+        alphabet: abcdefghijklmnopqrstuvwxyz1234567890
