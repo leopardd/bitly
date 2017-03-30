@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "72e51837fa4f4e54530f7bba67e417d8",
+    "content-hash": "1e40719a2083fb0c7a85248631f4fb7e",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -1309,6 +1309,64 @@
                 "xml"
             ],
             "time": "2017-03-29T10:10:19+00:00"
+        },
+        {
+            "name": "leopardd/url-shortener-bundle",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/leopardd/UrlShortenerBundle.git",
+                "reference": "ff69da66b6909ded76e0bb496babc696960b947e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/leopardd/UrlShortenerBundle/zipball/ff69da66b6909ded76e0bb496babc696960b947e",
+                "reference": "ff69da66b6909ded76e0bb496babc696960b947e",
+                "shasum": ""
+            },
+            "require": {
+                "doctrine/doctrine-bundle": "^1.6",
+                "doctrine/orm": "^2.5",
+                "hashids/hashids": "^2.0",
+                "jms/serializer-bundle": "^1.3",
+                "php": "~5.6|~7.0",
+                "symfony/framework-bundle": "~2.6|~3.0"
+            },
+            "require-dev": {
+                "phpspec/phpspec": "^3.1",
+                "sensio/generator-bundle": "^3.0",
+                "squizlabs/php_codesniffer": "^2.8",
+                "symfony/phpunit-bridge": "^3.0"
+            },
+            "type": "symfony-bundle",
+            "autoload": {
+                "psr-4": {
+                    "Leopardd\\Bundle\\UrlShortenerBundle\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nathachai Thongniran",
+                    "email": "inid3a@gmail.com",
+                    "homepage": "https://github.com/jojoee",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Symfony Bundle to generate and redirect short url",
+            "keywords": [
+                "bitly",
+                "googl",
+                "link",
+                "shortener",
+                "symfony",
+                "symfony-bundle",
+                "url"
+            ],
+            "time": "2017-03-30T18:46:38+00:00"
         },
         {
             "name": "monolog/monolog",
