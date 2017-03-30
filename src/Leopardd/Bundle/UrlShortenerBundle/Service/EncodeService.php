@@ -43,8 +43,8 @@ class EncodeService
      */
     public function process($shortUrl)
     {
-        $existingShortUrl = $this->shortUrlRepository->findOneByUrl($shortUrl->getUrl());
-        if ($existingShortUrl !== null) return $existingShortUrl;
+        $existentShortUrl = $this->shortUrlRepository->findOneByUrl($shortUrl->getUrl());
+        if ($existentShortUrl) return $existentShortUrl;
 
         $this->shortUrlRepository->save($shortUrl);
 

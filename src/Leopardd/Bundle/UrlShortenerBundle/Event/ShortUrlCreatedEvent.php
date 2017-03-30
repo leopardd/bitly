@@ -18,7 +18,7 @@ class ShortUrlCreatedEvent extends Event
      * ShortUrlCreatedEvent constructor.
      * @param ShortUrlInterface $shortUrl
      */
-    public function __construct($shortUrl)
+    public function __construct(ShortUrlInterface $shortUrl)
     {
         $this->shortUrl = $shortUrl;
     }

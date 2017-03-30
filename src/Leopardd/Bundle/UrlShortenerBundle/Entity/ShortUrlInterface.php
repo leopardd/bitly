@@ -20,7 +20,7 @@ interface ShortUrlInterface
 
     /**
      * @param string $code
-     * @return $this
+     * @return ShortUrlInterface
      */
     public function setCode($code);
 
@@ -31,7 +31,7 @@ interface ShortUrlInterface
 
     /**
      * @param string $url
-     * @return $this
+     * @return ShortUrlInterface
      */
     public function setUrl($url);
 }

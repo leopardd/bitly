@@ -55,8 +55,6 @@ class RedirectService
         $event = new ShortUrlRedirectedEvent($shortUrl);
         $this->dispatcher->dispatch(ShortUrlEvent::SHORT_URL_REDIRECTED, $event);
 
-        $targetUrl = $shortUrl->getUrl();
-
-        return new RedirectResponse($targetUrl);
+        return new RedirectResponse($shortUrl->getUrl());
     }
 }
