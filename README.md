@@ -35,6 +35,6 @@ GET: /short/<code>
 - Inspired by [bitly.com](https://bitly.com/) and [goo.gl](https://goo.gl/)
 
 [ico-license]: https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square
-[ico-travis]: https://img.shields.io/leopardd/bitly/master.svg?style=flat-square
+[ico-travis]: https://img.shields.io/travis/leopardd/bitly/master.svg?style=flat-square
 
 [link-travis]: https://travis-ci.org/leopardd/bitly
