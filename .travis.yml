@@ -6,7 +6,7 @@ php:
   - hhvm
 matrix:
   allow_failures:
-    - php: nightly
+    - php: hhvm
 cache:
   directories:
     - $HOME/.composer/cache
