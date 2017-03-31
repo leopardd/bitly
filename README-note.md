@@ -11,7 +11,8 @@ composer dump-autoload
 composer require <package-name> [version]
 composer require <package-name[:version]> [...package-name[:version]]
 composer require doctrine/doctrine-migrations-bundle "^1.0"
-composer require phpmd/phpmd:^2.6 phpunit/phpunit:^5.7 squizlabs/php_codesniffer:^2.8 phpspec/phpspec:^3.1
+composer require doctrine/doctrine-migrations-bundle:^1.0 jms/serializer-bundle:^1.3 leopardd/url-shortener-bundle:^1.0
+composer require --dev phpmd/phpmd:^2.6 phpspec/phpspec:^3.1 squizlabs/php_codesniffer:^2.8
 
 composer remove <package-name>
 

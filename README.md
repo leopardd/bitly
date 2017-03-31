@@ -12,6 +12,9 @@ Example project of [leopardd/UrlShortenerBundle](https://github.com/leopardd/Url
 3. Prepare database: `./bin/console doctrine:schema:update --force`
 4. Config `parameters.yml` and `config.dev.yml`
 
+`composer.lock` file was generated on PHP 5.6.
+If you want to use it on 7.0, remove `composer.lock` first.
+
 Test
 ```
 POST: /short/
@@ -24,6 +27,7 @@ GET: /short/<code>
 
 ## Feature & Update & Note
 
+- [x] Support PHP 5.6, 7.0
 - Test script
   - [ ] E2E
   - [x] Codeception
