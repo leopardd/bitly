@@ -17,6 +17,7 @@ branches:
 notifications:
   email: false
 before_script:
+  - rm composer.lock
   - travis_retry composer self-update
   - travis_retry composer install
 script:
